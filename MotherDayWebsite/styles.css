@@ -1,0 +1,98 @@
+#header-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure it's above the wheel */
+}
+
+header {
+  text-align: center;
+  background-color: #8a4b75; /* Darker pastel purple for the header */
+  color: #ffa500; /* Orange pastel for the text */
+  padding: 20px 0;
+  font-family: 'Brush Script MT', cursive; /* Cursive font style */
+  font-size: 36px; /* Bigger text */
+}
+
+body {
+  background-color: #e09691; /* Darker chalky salmon for the rest of the page */
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* Ensure it's behind the wheel */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#left-corner img,
+#right-corner img {
+  max-height: 600px; /* Set max height of images to 600px */
+}
+#left-corner,
+#right-corner {
+  margin: 0 10px; /* Add some spacing between the corners */
+}
+
+/* Your existing styles below */
+text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  pointer-events: none;
+}
+
+#chart {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#question {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  top: 0;
+  left: 520px;
+}
+
+#question h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.image-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Set z-index to -1 */
+}
+
+.image-container img {
+  width: 600px;
+  height: 800px;
+  object-fit: cover; /* Ensure the entire image is covered */
+}
